@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* ── Brand Identity: Clínica Auria ─────────────────────────────────────────── */
+
+:root {
+  /* Paleta principal */
+  --sage:       #5F7C74;   /* Verde Sálvia — logo, títulos, destaques institucionais */
+  --sage-light: #EBF2F0;   /* Sálvia claro — fundos de ícones, círculos */
+  --sage-dark:  #4A6861;   /* Sálvia escuro — hover, CTA section */
+  --champagne:  #D8C3A5;   /* Champagne Suave — papelaria, divisores */
+  --areia:      #F3EDE4;   /* Areia Clara — fundos alternados de seções */
+  --porcelana:  #FAFAF7;   /* Branco Porcelana — cards, respiro */
+  --grafite:    #26302E;   /* Grafite Clínico — texto principal, footer */
+  --grafite-mid:#4A5550;   /* Grafite médio — texto secundário */
+  --terracota:  #B86F52;   /* Terracota Elegante — CTAs, destaques comerciais */
+  --terracota-h:#A05E42;   /* Hover do terracota */
+  --gold:       #C9A84C;   /* Dourado — estrelas avaliação */
+}
+
+@theme inline {
+  --font-display: var(--font-display);
+  --font-sans:    var(--font-sans);
+
+  --color-sage:       var(--sage);
+  --color-sage-light: var(--sage-light);
+  --color-sage-dark:  var(--sage-dark);
+  --color-champagne:  var(--champagne);
+  --color-areia:      var(--areia);
+  --color-porcelana:  var(--porcelana);
+  --color-grafite:    var(--grafite);
+  --color-terracota:  var(--terracota);
+  --color-gold:       var(--gold);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  color: var(--grafite);
+  background: var(--porcelana);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utility classes */
+.font-display { font-family: var(--font-display), Georgia, serif; }
+.font-sans    { font-family: var(--font-sans), system-ui, sans-serif; }
